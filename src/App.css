@@ -1,0 +1,46 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px 40px;
+  grid-auto-flow: row;
+  margin: 50px;
+}
+
+.SideInfo {
+  grid-area: 1 / 1 / 6 / 2;
+  background-color: rgb(224, 213, 213);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.TopRead {
+  grid-area: 1 / 2 / 3 / 5;
+  /* position:relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.MainBody {
+  grid-area: 3 / 2 / 6 / 5;
+  background-color: rgb(224, 213, 213);
+}
+
+.Reviews {
+  grid-area: 1 / 2 / 3 / 3;
+  background-color: rgb(224, 213, 213);
+}
+
+.AverageRating {
+  grid-area: 1 / 3 / 3 / 4;
+  background-color: rgb(224, 213, 213);
+}
+
+.SentimentAnalysis {
+  grid-area: 1 / 4 / 3 / 5;
+  background-color: rgb(224, 213, 213);
+}
